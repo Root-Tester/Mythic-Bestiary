@@ -25,6 +25,17 @@ A simple, single-page RPG creature search application built for educational purp
 
 ---
 
+## 📄 Privacy & Terms
+
+-  No cookies, tracking, or analytics are used.
+
+-  See [Privacy Policy & Terms](https://root-tester.github.io/Mythic-Bestiary/privacy-policy.md) for full details.
+
+-  Licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+---
+
+
 ##  📂 File Structure
 
 mythic-bestiary/
@@ -35,3 +46,15 @@ mythic-bestiary/
 ├── README.md           # Project documentation
 ├── privacy-policy.md   # Privacy policy and terms of use
 └── robots.txt          # Crawler access control
+
+---
+
+## 📜 License
+
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+---
+
+## 🙏 Acknowledgments
+
+- [freeCodeCamp](https://www.freecodecamp.org) — Design inspiration and API provider
