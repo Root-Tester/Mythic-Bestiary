@@ -1,0 +1,290 @@
+/*
+ * Copyright 2025 Tushar Kumar Sahu
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    --darkBlue: #020331;
+    --moon: #ebeef0;
+    --purple: #740391;
+    --red: #ec0101;
+    --lightGray: #e6e6e6;
+    --lightBlue: #0c88ee;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--darkBlue);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 120px;
+    display: block;
+    margin: 25px 0px;
+}
+
+.title {
+    font-size: 1.7em;
+    color: var(--moon);
+    text-align: center;
+}
+
+#container {
+    width: 325px;
+    margin: 25px 0px;
+    border: 1px solid var(--moon);
+    background-color: var(--moon);
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px 0px #d6d6d6ea;
+}
+
+.output,
+#search-form {
+    display: flex;
+    justify-content: center;
+}
+
+#search-form {
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    gap: 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+label {
+    align-self: center;
+}
+
+#search-input:focus-visible,
+#search-button:focus-visible {
+    outline: 3px solid var(--lightBlue);
+}
+
+#search-input {
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#search-button {
+    padding: 14px 0px;
+    width: 80px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--purple);
+    color: var(--moon);
+    border: none;
+}
+
+.output {
+    margin: 10px 0px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-container,
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-container {
+    min-height: 200px;
+    background-color: var(--lightGray);
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.name-and-id {
+    height: 28px;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+#creature-name,
+#special-name {
+    font-weight: bold;
+}
+
+.size,
+#special-description {
+    font-size: 0.85rem;
+}
+
+#types {
+    min-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.type {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--red);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7rem;
+    width: 66px;
+}
+
+.bottom-container {
+    min-height: 325px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    background-color: var(--purple);
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1rem;
+    color: var(--moon);
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+    border-left: 5px solid var(--moon)
+}
+
+tr {
+    border-bottom: 5px solid var(--moon);
+}
+
+td,
+th {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Special styling for Creature types */
+
+.normal {
+    background-color: #b7b7aa;
+}
+
+.fire {
+    background-color: #ff6f52;
+}
+
+.water {
+    background-color: #42a1ff;
+}
+
+.electric {
+    background-color: #fecc33;
+}
+
+.grass {
+    background-color: #78cc55;
+}
+
+.ice {
+    background-color: #66ccfe;
+}
+
+.fighting {
+    background-color: #d3887e;
+}
+
+.poison {
+    background-color: #c68bb7;
+}
+
+.ground {
+    background-color: #dfba52;
+}
+
+.flying {
+    background-color: #8899ff;
+}
+
+.psychic {
+    background-color: #ff66a3;
+}
+
+.bug {
+    background-color: #aabb23;
+}
+
+.rock {
+    background-color: #baaa66;
+}
+
+.ghost {
+    background-color: #9995d0;
+}
+
+.dragon {
+    background-color: #9e93f1;
+}
+
+.dark {
+    background-color: #b59682;
+}
+
+.steel {
+    background-color: #abaabb;
+}
+
+.fairy {
+    background-color: #ed99ed;
+}
+
+
+footer{
+    color: var(--moon);
+    text-align: center;
+    font-weight: bold;
+    background-color: #4c4ceb18;
+    margin: 5px 0px 0px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 550px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        width: 450px;
+    }
+
+    #search-form,
+    .top-container,
+    .bottom-container {
+        width: 95%;
+    }
+
+    .type {
+        width: 75px;
+    }
+}

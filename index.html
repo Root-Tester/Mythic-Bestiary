@@ -1,0 +1,158 @@
+<!--
+ * Copyright 2025 [Tushar Kumar Sahu]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=edge,chrome=1">
+
+    <meta name="author" content="Tushar Kumar Sahu">
+    <meta name="description"
+        content="Explore a vast bestiary of RPG creatures with Mythic Bestiary-search stats, lore, and abilities in an easy-to-use interface. Built with love and code, inspired by freeCodeCamp.">
+    <meta name="keywords"
+        content="RPG creature search, Mythic Bestiary, Creature search app, RPG monster database, Mythical creatures, RPG creature lookup, FreeCodeCamp RPG project, Explore RPG creatures, RPG creature directory, Fantasy creature database, Mythical beasts search, RPG creature details, RPG character search, RPG creatures list, Fantasy bestiary, RPG creatures ID search, Fantasy monsters app, RPG stats lookup, Mythic creatures API, Interactive RPG creature search">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+
+    <meta property="og:title" content="Simple Telephone Number Validator web application">
+    <meta property="og:description"
+        content="Explore a vast bestiary of RPG creatures with Mythic Bestiary-search stats, lore, and abilities in an easy-to-use interface. Built with love and code, inspired by freeCodeCamp.">
+    <meta property="og:image" content="https://root-tester.github.io/Roman-Numeral-Converter/favicon.png">
+    
+    <!-- Optional image for social sharing -->
+
+    <meta property="og:url" content="https://root-tester.github.io/Mythic-Bestiary/">
+   
+    <!-- Canonical Tag -->
+
+    <link rel="canonical" href="https://root-tester.github.io/Mythic-Bestiary/">
+    <title>RPG Creature Search App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://root-tester.github.io/Roman-Numeral-Converter/favicon.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <main id="main-content" class="main">
+
+        <img src="https://root-tester.github.io/Roman-Numeral-Converter/logo.png" alt="The Root Tester" id="logo">
+        <h1 class="title">RPG Creature Search App</h1>
+
+        <div id="container">
+            <form role="search" id="search-form">
+                <label for="search-input">Search for Creature Name or ID:</label>
+                <input type="text" name="Creature" id="search-input" required>
+                <button id="search-button">Search</button>
+            </form>
+
+            <!-- output  -->
+
+            <div class="output">
+                <div class="top-container">
+                    <div class="name-and-id">
+                        <span id="creature-name"></span>
+                        <span id="creature-id"></span>
+                        <div class="size">
+                            <span id="weight"></span>
+                            <span id="height"></span>
+                        </div>
+                    </div>
+
+                    <div id="types">
+
+                    </div>
+
+                    <div>
+                        <div id="special-name">
+
+                        </div>
+
+                        <div id="special-description">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bottom container -->
+
+                <div class="bottom-container">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Base</th>
+                                <th>Stats</th>
+                            </tr>
+                            <tr>
+                                <td>HP:</td>
+                                <td id="hp"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Attack:</td>
+                                <td id="attack"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Defencs:</td>
+                                <td id="defense"></td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Attack:</td>
+                                <td id="special-attack"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Sp. Defense: </td>
+                                <td id="special-defense"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Speed:</td>
+                                <td id="speed"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Mythic Bestiary | Your ultimate RPG creature companion
+            Search
+        </p>
+
+        <p>
+            📜 Includes 20 unique creatures (IDs 1–20) for quick reference and exploration.
+        </p>
+
+        <p>
+            Design inspired by a project from <a href="http://freecodecamp.org" target="_blank"
+                rel="noopener noreferrer">freeCodeCamp</a>
+        </p>
+    </footer>
+</body>
+
+<script src="main.js"></script>
+
+</html>
