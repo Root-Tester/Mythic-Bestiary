@@ -38,6 +38,7 @@ A simple, single-page RPG creature search application built for educational purp
 
 ##  📂 File Structure
 
+```plaintext
 mythic-bestiary/
 │
 ├── index.html          # Main HTML file
@@ -46,7 +47,7 @@ mythic-bestiary/
 ├── README.md           # Project documentation
 ├── privacy-policy.md   # Privacy policy and terms of use
 └── robots.txt          # Crawler access control
-
+```
 ---
 
 ## 📜 License
