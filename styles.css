@@ -274,6 +274,10 @@ footer{
     width:100%;
 }
 
+a{
+    color: #ed99ed;
+}
+
 @media screen and (min-width: 550px) {
     h1 {
         font-size: 2em;
